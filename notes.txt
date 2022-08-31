@@ -1,0 +1,5 @@
+go mod init <name of folder>
+go mod tidy
+
+go get -u <name of library>
+curl -X POST -H "Content-Type: application/json" --data '{ "query": "{ beastType {id name } }" }' http://localhost:8080/graphql
